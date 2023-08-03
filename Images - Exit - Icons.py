@@ -9,7 +9,8 @@ root.iconphoto(False, photo)
 
 # Using images
 my_img = ImageTk.PhotoImage(Image.open("blahblah.png"))  # The PhotoImage is the same as before
-my_label = Label(image=my_img) #This is what makes it appear on the screen - you have to do this every time
+my_label = Label(image=my_img) 
+my_label.pack()#This is what makes it appear on the screen - you have to do this every time
 
 # An exit button
 button_quit = Button(root, text="Exit Program", command=root.quit)
